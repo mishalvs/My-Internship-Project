@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mishal V S - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="home">
+        <nav>
+            <div class="hero">
+                <h2>
+                    <span class="large-text">MISHAL V S</span> <span class="small-text">Student</span>
+                </h2>
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container-section">
+        <div class="container">
+            <h3 class="centered-paragraph">
+                I'm Mishal V S, a second-year Computer Science Engineering student 
+                at St. Joseph Engineering College, graduating in 2025.
+                My academic journey explores Cybersecurity, Networking, and Graphics Design. 
+                Proficient in Python, Java, C, and SQL,
+                I've created projects like Online Movie Booking, a Smart Blind Stick,
+                and ventured into Matlab Simulink modeling. 
+                Beyond studies, I delve into Computer Vision and Data Science 
+                while actively contributing to web app projects for the Google Development Student Club.
+                My passion lies in Cybersecurity, Networking, and UX Design.
+            </h3>
+        </div>
+    </div>
+    <section id="about" class="section">
+        <div class="container">
+            <h3>About Me</h3>
+            <h4 class="centered-paragraph">
+            </h3>
+            <div class="boxes">
+                <div class="skills-box">
+                    <h4>Skills</h4>
+                    <ul>
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>C Programming</li>
+                        <li>MySQL</li>
+                    </ul>
+                </div>
+                <div class="self-study-box">
+                    <h4>Self Study</h4>
+                    <ul>
+                        <li>Computer Vision</li>
+                        <li>Data Science</li>
+                        <li>Software Tools</li>
+                    </ul>
+                </div>
+                <div class="interests-box">
+                    <h4>Interests</h4>
+                    <ul>
+                        <li>Cybersecurity</li>
+                        <li>Networking</li>
+                        <li>UX Designing</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio" class="section">
+        <div class="container">
+            <h3>Portfolio</h3>
+            <div class="project-boxes">
+                <div class="project-item">
+                    <div class="project-photo">
+                        <img src="images/smart blind stick.avif" alt="Project 1">
+                    </div>
+                    <h4>Arduino Smart Blind Stick</h4>
+                </div>
+                <div class="project-item">
+                    <div class="project-photo">
+                        <img src="images/fish feeder.jpg" alt="Project 2">
+                    </div>
+                    <h4>Automatic Fish Feeder</h4>
+                </div>
+                <div class="project-item">
+                    <div class="project-photo">
+                        <img src="images/pv system.jpg" alt="Project 3">
+                    </div>
+                    <h4>Hybrid Photovoltaic and Fuel System</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+        
+    
+    <section id="contact" class="section">
+        <div class="container">
+            <h3>Contact Me</h3>
+            <p>Connect with me for any queries: <a href="mailto:mishalvs211003@gmail.com">mishalvs211003@gmail.com</a></p>
+        </div>
+    </section>
+    <script src="script.js"></script>
+    <script>
+window.addEventListener("scroll", function () {
+    var headerContainer = document.querySelector(".header-container");
+    if (window.pageYOffset > headerContainer.offsetHeight) {
+        headerContainer.style.position = "fixed";
+    } else {
+        headerContainer.style.position = "relative";
+    }
+});
+</script>
+<script>
+    window.addEventListener("scroll", function () {
+        var headerContainer = document.querySelector(".header-container");
+        if (headerContainer) {
+            if (window.pageYOffset > headerContainer.offsetHeight) {
+                headerContainer.style.position = "fixed";
+            } else {
+                headerContainer.style.position = "relative";
+            }
+        }
+    });
+    </script>
+</body>
+</html>

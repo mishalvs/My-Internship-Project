@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('images/istockphoto-1337977426-170667a.webp') no-repeat center center fixed; 
+    background-size: cover;
+    color: #fbfbfb;
+}
+
+
+header {
+    color:#ffffff;
+    text-align: center;
+    padding: 60px 0;
+    position: relative;
+}
+
+.large-text {
+    font-size: 24px; 
+}
+
+.small-text {
+    font-size: 14px; 
+}
+
+.centered-paragraph {
+    text-align: center;
+}
+
+.centered-paragraph p {
+    text-align: center;
+}
+
+.container-section {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+    text-align: right; 
+    padding: 14px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgb(56, 60, 71);
+    z-index: 4;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #f8f8f8;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ff9900; 
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+.section {
+    padding: 80px 0;
+    text-align: center;
+}
+.hero {
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
+.boxes {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.skills-box,
+.self-study-box,
+.interests-box {
+    flex-basis: calc(33.33% - 20px); 
+    background-color: #f1e6e600; 
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.skills-box ul,
+.self-study-box ul,
+.interests-box ul {
+    list-style: none;
+}
+
+.skills-box h4,
+.self-study-box h4,
+.interests-box h4 {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #333;
+    color: #fff;
+    margin: 0;
+    padding: 10px;
+}
+
+.skills-box ul li,
+.self-study-box ul li,
+.interests-box ul li {
+    border-bottom: 1px solid #cccccc00;
+    padding: 5px 0;
+}
+
+.project-boxes {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+}
+
+.project-item {
+    flex-basis: calc(33.33% - 20px); 
+    background-color: #f0f0f000; 
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.project-photo {
+    text-align: center;
+}
+
+.project-photo img {
+    max-width: 100%;
+    border-radius: 10px;
+}
