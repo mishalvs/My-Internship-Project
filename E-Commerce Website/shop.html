@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NovaTune - Shop</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">NovaTune</h1>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="shop-section">
+    <h2 style="text-align:center; margin-bottom: 30px;">Explore Our Audio Gear</h2>
+    <div class="product-list">
+
+      <div class="product">
+        <img src="images/NovaBudsPro.jpg" alt="NovaBuds Pro" />
+        <h3>NovaBuds Pro</h3>
+        <p>$99.99</p>
+        <button onclick="addToCart('NovaBuds Pro', 99.99)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="images/NovaHeadX.jpg" alt="NovaHead X" />
+        <h3>NovaHead X</h3>
+        <p>$149.99</p>
+        <button onclick="addToCart('NovaHead X', 149.99)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="images/NovaBass360.jpg" alt="NovaBass 360" />
+        <h3>NovaBass 360</h3>
+        <p>$129.99</p>
+        <button onclick="addToCart('NovaBass 360', 129.99)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="images/NovaAirLite.jpg" alt="NovaAir Lite" />
+        <h3>NovaAir Lite</h3>
+        <p>$89.99</p>
+        <button onclick="addToCart('NovaAir Lite', 89.99)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="images/NovaStudioM.jpg" alt="NovaStudio M" />
+        <h3>NovaStudio M</h3>
+        <p>$179.99</p>
+        <button onclick="addToCart('NovaStudio M', 179.99)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="images/NovaRiffPro.jpg" alt="NovaRiff Pro" />
+        <h3>NovaRiff Pro</h3>
+        <p>$109.99</p>
+        <button onclick="addToCart('NovaRiff Pro', 109.99)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="images/NovaEchoMini.jpg" alt="NovaEcho Mini" />
+        <h3>NovaEcho Mini</h3>
+        <p>$69.99</p>
+        <button onclick="addToCart('NovaEcho Mini', 69.99)">Add to Cart</button>
+      </div>
+
+      
+
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 NovaTune. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
